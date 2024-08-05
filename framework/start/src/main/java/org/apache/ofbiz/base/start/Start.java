@@ -26,6 +26,8 @@ import java.util.stream.Collectors;
 
 import org.apache.ofbiz.base.container.ContainerLoader;
 
+import static org.apache.ofbiz.base.start.StartupCommandUtil.printOfbizStartupHelp;
+
 /**
  * OFBiz startup class.
  *
@@ -66,7 +68,7 @@ public final class Start {
         } catch (StartupException e) {
             // incorrect arguments passed to the command line
             StartupCommandUtil.highlightAndPrintErrorMessage(e.getMessage());
-            StartupCommandUtil.printOfbizStartupHelp(System.err);
+            printOfbizStartupHelp(System.err);
             System.exit(1);
         }
 
@@ -76,7 +78,7 @@ public final class Start {
         }
         switch (commandType) {
         case HELP:
-            StartupCommandUtil.printOfbizStartupHelp(System.out);
+            printOfbizStartupHelp(System.out);
             break;
         case STATUS:
             System.out.println("Current Status : " + AdminClient.requestStatus(INSTANCE.config));

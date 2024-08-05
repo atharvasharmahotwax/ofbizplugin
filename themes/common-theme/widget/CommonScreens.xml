@@ -310,6 +310,7 @@ under the License.
                                         <html-template location="${footerTemplateLocation}" />
                                     </html>
                                 </platform-specific>
+                                <label text="${footerTemplateLocation}"/>
                             </widgets>
                             <fail-widgets>
                                 <platform-specific>

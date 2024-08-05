@@ -98,5 +98,6 @@ under the License.
     ${StringUtil.wrapString(webAnalyticsConfig.webAnalyticsCode!)}
     </#list>
       </script>
+
 </#if>
 </head>

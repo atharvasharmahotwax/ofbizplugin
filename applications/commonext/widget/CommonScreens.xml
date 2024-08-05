@@ -54,6 +54,7 @@ under the License.
                 </entity-and>
             </actions>
             <widgets>
+
                 <section>
                     <condition><not><if-empty field="PartyAcctgPrefAndGroupList"/></not></condition><!-- produced by  ChangeOrgPartyId.groovy-->
                     <actions>

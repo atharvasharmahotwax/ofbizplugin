@@ -25,6 +25,7 @@ under the License.
         <#include "ofbizhome://VERSION" ignore_missing=true/>
         <#include "ofbizhome://runtime/GitInfo.ftl" ignore_missing=true/>
     </span>
+    <span>Atharva Sharma</span>
 </div>
 </div>
 <#if layoutSettings.VT_FTR_JAVASCRIPT?has_content>

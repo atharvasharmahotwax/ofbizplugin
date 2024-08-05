@@ -82,6 +82,7 @@ under the License.
 <#if userLogin?has_content>
     <div id="main-navigation-bar" class="fixed-nav-bar">
         <div id="main-nav-bar-left">
+
             <img id="homeGlyph" src="/rainbowstone/images/home.svg" alt="Home">
             <span id="homePageTitle">Home Page</span>
             <label class="main-bar-label">${uiLabelMap.EmbiHomeMenuDisplayAllMenu}</label>

@@ -136,14 +136,19 @@ under the License.
                 <!-- FIXME this is only temporary a more elaborate solution would be preferred, see OFBIZ-9241 -->
                 <set field="isEcommercePresent" value="${groovy:null != org.apache.ofbiz.base.util.UtilURL.fromOfbizHomePath('plugins/ecommerce/ofbiz-component.xml')}" type="Boolean" global="true"/>
             </actions>
-            <widgets />
+            <widgets>
+                <label text="${commonDecoratorLocation}"/>
+            </widgets>
+
         </section>
+
     </screen>
 
     <!-- Global screen rendering context initialization, intended to be included in screen decorators. Devs - please keep this simple and generic. you can sucharge it on the theme-->
     <screen name="GlobalActions">
         <section>
             <widgets>
+
                 <include-screen name="MinimalActions" />
                 <include-screen name="GlobalActions" location="${groovy:commonScreenLocations.GlobalActions?commonScreenLocations.GlobalActions:commonDecoratorLocation}"/>
             </widgets>
